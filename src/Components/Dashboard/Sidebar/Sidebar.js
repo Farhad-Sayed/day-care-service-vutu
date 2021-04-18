@@ -13,6 +13,7 @@ import {
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import { UserContext } from "../../../App";
+import { faCcVisa } from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -41,6 +42,11 @@ const Sidebar = () => {
             <li>
               <Link to="/" className="text-white">
                 <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/enroll" className="text-white">
+                <FontAwesomeIcon icon={faCcVisa} /> <span>Place Order</span>
               </Link>
             </li>
             <li>
