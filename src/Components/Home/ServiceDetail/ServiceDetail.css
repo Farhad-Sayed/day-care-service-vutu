@@ -1,0 +1,8 @@
+.service-card{
+    box-shadow: 5px 5px 10px gray;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover{
+    transform: scale(1.1);
+}
