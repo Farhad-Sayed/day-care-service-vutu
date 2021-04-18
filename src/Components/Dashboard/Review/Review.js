@@ -15,7 +15,7 @@ const Review = () => {
           quote: data.quote,
           imageURL: imageURL,
         };
-        const url = 'http://localhost:5000/addreviews';
+        const url = 'https://peaceful-brook-34340.herokuapp.com/addreviews';
         console.log(reviewData);
         fetch(url, {
           method: "POST",

@@ -6,7 +6,7 @@ const ServiceDetail = ({ service }) => {
   const history = useHistory();
   const handleEnrollNow = (id) => {
     history.push(`/checkout/${id}`);
-    fetch(`http://localhost:5000/service/${id}`)
+    fetch(`https://peaceful-brook-34340.herokuapp.com/service/${id}`)
       .then((response) => response.json())
       .then((data) => console.log(data));
   };

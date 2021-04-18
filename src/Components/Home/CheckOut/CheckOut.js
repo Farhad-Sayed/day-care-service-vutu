@@ -9,7 +9,7 @@ const CheckOut = () => {
   const [service, setService] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${id}`)
+    fetch(`https://peaceful-brook-34340.herokuapp.com/service/${id}`)
       .then((response) => response.json())
       .then((data) => setService(data));
     // console.log(service);

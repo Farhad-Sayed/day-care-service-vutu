@@ -7,7 +7,7 @@ const ManageServices = () => {
 
   // Load/show data from api
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://peaceful-brook-34340.herokuapp.com/services")
       .then((response) => response.json())
       .then((data) => {
         setServices(data);
@@ -16,7 +16,7 @@ const ManageServices = () => {
 
   // delete function
   const deleteService = (id) => {
-    fetch(`http://localhost:5000/deleteService/${id}`, {
+    fetch(`https://peaceful-brook-34340.herokuapp.com/deleteService/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

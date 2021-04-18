@@ -24,7 +24,7 @@ const Enroll = () => {
       service: enrollment.service,
       paymentId,
     };
-    const url = "http://localhost:5000/enroll";
+    const url = "https://peaceful-brook-34340.herokuapp.com/enroll";
     //   console.log(enrollData);
     fetch(url, {
       method: "POST",

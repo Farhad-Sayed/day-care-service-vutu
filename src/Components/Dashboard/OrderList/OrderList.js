@@ -7,7 +7,7 @@ const OrderList = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/orderlist?email=" + loggedInUser.email)
+    fetch("https://peaceful-brook-34340.herokuapp.com/orderlist?email=" + loggedInUser.email)
       .then((response) => response.json())
       .then((data) => {
         setEnrollmentData(data);
